@@ -47,18 +47,6 @@ Create a `.env` file (or use Colab's secrets manager) with the following keys:
 PINECONE="your_pinecone_api_key"
 GROQ_API_KEY="your_groq_api_key"
 ```
-In the notebook, the `.env` file is loaded from a specific path in Google Drive:
-```python
-from dotenv import load_dotenv
-import os
-import sys
-
-ENV_PATH = "/content/drive/MyDrive/curso_unicamp_2025/sistemas_inteligentes/trab1/env" # Adjust path as needed
-load_dotenv(ENV_PATH)
-
-ROOT_PATH = "/content/drive/MyDrive/curso_unicamp_2025/sistemas_inteligentes/trab1/" # Adjust path as needed
-sys.path.append(ROOT_PATH)
-```
 
 ## Running the Project
 
